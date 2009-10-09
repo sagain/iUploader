@@ -1,0 +1,9 @@
+<table border="0" cellspacing="5" cellpadding="5">
+  <tr><th>Title</th><th>Description</th></tr>
+  <% @alerts.each do |alert| %>
+    <tr>
+      <td><%= alert.title -%></td>
+      <td><%= alert.content -%></td>
+    </tr>
+  <% end %>
+</table>
